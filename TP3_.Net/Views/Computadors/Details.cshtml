@@ -1,0 +1,64 @@
+﻿@model TP3_.NET.Models.Computador
+
+@{
+    ViewData["Title"] = "Detalhes dos computadores";
+}
+
+<h1>Detalhes dos computadores</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Processador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Processador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PlacaMae)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PlacaMae)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Memoria)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Memoria)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroPratrimonio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroPratrimonio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataCompra)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataCompra)
+        </dd>
+    </dl>
+</div>
+
+<div class="Computador_Details_btns">
+    <div>
+        <a class="my_btn action_my_btn" asp-action="Edit" asp-route-id="@Model?.Id">Editar</a>
+    </div>
+    <div>
+        <a class="my_btn " asp-action="Index">Voltar</a>
+    </div>
+</div>

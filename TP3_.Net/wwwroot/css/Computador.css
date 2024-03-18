@@ -1,0 +1,22 @@
+﻿div.Computador_Index_title{
+    margin: 10px 0 20px 0;
+}
+
+.Computador_Index_table.thead.tr.th{
+    color: #fff;
+}
+
+/* Create.cshtml ----------------------------------------------- */
+
+
+.Computador_Create_btns,
+.Computador_Edit_btns,
+.Computador_Details_btns,
+.Computador_Delete_btns {
+    margin-top: 10px;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+}
+
